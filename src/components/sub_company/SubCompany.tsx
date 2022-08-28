@@ -1,5 +1,4 @@
-import React from 'react';
-import { SubCompanyItem } from './SubCompanyItem';
+import SubCompanyItem from './SubCompanyItem';
 
 type SubCompanyProps = {
   data: {
@@ -23,11 +22,11 @@ export const SubCompany = (props: SubCompanyProps) => {
       </div>
       <div className='container'>
         <h2 className='f_size_30 f_600 t_color3 l_height45 text-center mb_90'>
-          SaasLand is built for designers like you.
-          <br /> With useful features, an intuitive interface.
+          Anak perusahaan dari
+          <br /> Trusman Global Investama (Holding)
         </h2>
         <div className='row p_service_info'>
-          {props.data.map((item) => {
+          {props.data.map((item, index) => {
             return (
               <SubCompanyItem
                 title={item.titles}
@@ -35,6 +34,8 @@ export const SubCompany = (props: SubCompanyProps) => {
                 icon={item.icon}
                 rclass={item.rclass}
                 iclass={item.iclass}
+                key={index}
+                id={index}
               />
             );
           })}

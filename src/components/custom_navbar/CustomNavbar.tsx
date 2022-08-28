@@ -14,7 +14,6 @@ export const CustomNavbar = ({
   nClass,
   cClass,
   slogo,
-  hbtnClass,
 }: CustomNavbarProps) => {
   return (
     <Sticky top={0} innerZ={9999} activeClass='navbar_fixed'>
@@ -28,8 +27,8 @@ export const CustomNavbar = ({
             <button
               className='navbar-toggler collapsed'
               type='button'
-              data-toggle='collapse'
-              data-target='#navbarSupportedContent'
+              data-bs-toggle='collapse'
+              data-bs-target='#navbarSupportedContent'
               aria-controls='navbarSupportedContent'
               aria-expanded='false'
               aria-label='Toggle navigation'
