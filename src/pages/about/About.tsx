@@ -6,7 +6,7 @@ import { SubCompanyData } from '../../components/sub_company/SubCompany.constant
 
 export const About = () => {
   return (
-    <div>
+    <div className='body_wrapper'>
       <CustomNavbar slogo='sticky_logo' mClass='menu_four' nClass='w_menu' />
       <BreadCrumb
         breadcrumbClass='breadcrumb_area'
