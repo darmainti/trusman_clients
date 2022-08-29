@@ -1,0 +1,67 @@
+export const CareerComponentData = {
+  data: [
+    {
+      id: '1',
+      titles: 'Product Owner',
+      description: 'Jakarta, Full-time',
+      rclass: 'pr_70',
+      iclass: 'icon_one',
+    },
+    {
+      id: '2',
+      titles: 'Senior Tech Recruiter',
+      description: 'Jakarta, Full-time',
+      rclass: 'pr_70',
+      iclass: 'icon_one',
+    },
+    {
+      id: '3',
+      titles: 'Infrastructure Engineer',
+      description: 'Jakarta, Part-time',
+      rclass: 'pr_70',
+      iclass: 'icon_one',
+    },
+    {
+      id: '4',
+      titles: 'Data Analyst',
+      description: 'Jakarta, Full-time',
+      rclass: 'pr_70',
+      iclass: 'icon_one',
+    },
+    {
+      id: '5',
+      titles: 'IT Vendor Management',
+      description: 'Jakarta, Full-time',
+      rclass: 'pr_70',
+      iclass: 'icon_one',
+    },
+    {
+      id: '6',
+      titles: 'Product Marketing',
+      description: 'Jakarta, Full-time',
+      rclass: 'pr_70',
+      iclass: 'icon_one',
+    },
+    {
+      id: '7',
+      titles: 'Sales Area Manager',
+      description: 'Jakarta, Full-time',
+      rclass: 'pr_70',
+      iclass: 'icon_one',
+    },
+    {
+      id: '8',
+      titles: 'Account Executive',
+      description: 'Jakarta, Full-time',
+      rclass: 'pr_70',
+      iclass: 'icon_one',
+    },
+    {
+      id: '9',
+      titles: 'Content Creator',
+      description: 'Jakarta, Part-time',
+      rclass: 'pr_70',
+      iclass: 'icon_one',
+    },
+  ],
+};

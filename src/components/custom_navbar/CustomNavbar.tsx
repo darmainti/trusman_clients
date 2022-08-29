@@ -62,16 +62,12 @@ export const CustomNavbar = ({
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink
-                    title='Portofolio'
-                    className='nav-link'
-                    to='/contact'
-                  >
-                    Portofolio
+                  <NavLink title='Portofolio' className='nav-link' to='/blog'>
+                    Blog
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink title='Career' className='nav-link' to='/contact'>
+                  <NavLink title='Career' className='nav-link' to='/career'>
                     Karir
                   </NavLink>
                 </li>
