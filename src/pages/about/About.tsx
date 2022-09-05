@@ -3,6 +3,7 @@ import BussinessPartner from '../../components/bussiness_partner/BussinessPartne
 import { CustomNavbar } from '../../components/custom_navbar/CustomNavbar';
 import { SubCompany } from '../../components/sub_company/SubCompany';
 import { SubCompanyData } from '../../components/sub_company/SubCompany.constant';
+import VisiMisi from '../../components/visi_misi/VisiMisi';
 
 export const About = () => {
   return (
@@ -16,6 +17,7 @@ export const About = () => {
               Trusman adalah perusahaan investasi yang kuat dalam mengidentifikasi, memanage, dan mengembangkan serta menciptakan nilai lebih
               di perusahaan-perusahaan yang kami investasikan'
       />
+      <VisiMisi />
       <SubCompany data={SubCompanyData.data} />
       <BussinessPartner pClass='partner_logo_area_five bg_color' />
     </div>

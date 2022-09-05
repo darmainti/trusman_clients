@@ -8,6 +8,7 @@ export const SubCompanyData = {
       icon: 'panel',
       rclass: 'pr_70',
       iclass: 'icon_one',
+      img: 'trus_glotech.jpg',
     },
     {
       id: '2',
@@ -16,6 +17,7 @@ export const SubCompanyData = {
       icon: 'layout-grid2',
       rclass: 'pl_50 pr_20',
       iclass: 'icon_two',
+      img: 'megaland.jpg',
     },
     {
       id: '3',
@@ -24,6 +26,7 @@ export const SubCompanyData = {
       icon: 'fullscreen',
       rclass: 'pl_70',
       iclass: 'icon_three',
+      img: 'tata_raya_karisma.jpg',
     },
     {
       id: '4',
@@ -32,6 +35,7 @@ export const SubCompanyData = {
       icon: 'vector',
       rclass: 'pr_70',
       iclass: 'icon_four',
+      img: 'indorei_lemindo_persada.jpg',
     },
     {
       id: '5',
@@ -41,6 +45,7 @@ export const SubCompanyData = {
       icon: 'cloud-down',
       rclass: 'pl_50 pr_20',
       iclass: 'icon_five',
+      img: 'inspira.jpg',
     },
     {
       id: '6',
@@ -50,6 +55,7 @@ export const SubCompanyData = {
       icon: 'bolt',
       rclass: 'pl_70',
       iclass: 'icon_six',
+      img: 'inkara.jpeg',
     },
   ],
 };

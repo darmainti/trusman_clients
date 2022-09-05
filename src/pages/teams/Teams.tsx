@@ -1,18 +1,19 @@
 import BreadCrumb from '../../components/bread_crumb/BreadCrumb';
-import ContactUs from '../../components/contact_us/ContactUs';
 import { CustomNavbar } from '../../components/custom_navbar/CustomNavbar';
+import TeamCompany from '../../components/team_company/TeamCompany';
+import { TeamCompanyData } from '../../components/team_company/TeamCompany.constant';
 
-export const Contact = () => {
+export const Teams = () => {
   return (
     <div className='body_wrapper'>
       <CustomNavbar slogo='sticky_logo' mClass='menu_four' nClass='w_menu' />
       <BreadCrumb
         breadcrumbClass='breadcrumb_area'
         imgName='breadcrumb/banner_bg.png'
-        title='Hubungi Kami'
-        description='Apabila Anda memiliki pertanyaan, kami ada untuk membantu Anda. Hubungi kami melalui call center atau Anda dapat mengirimkan email dengan mengisi form dibawah ini.'
+        title='Team Trusman'
+        description='Inilah sekelompok orang yang luar biasa yang bersatu untuk membentuk team demi kekuatan untuk membentuk Trusman.'
       />
-      <ContactUs />
+      <TeamCompany data={TeamCompanyData.data} />
     </div>
   );
 };

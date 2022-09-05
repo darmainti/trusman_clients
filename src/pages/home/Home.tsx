@@ -18,6 +18,7 @@ export const Home = () => {
         ftitle='Perusahaan Berwawasan Kedepan'
         fsubtitle='Tentang Trusman'
         fdescription='Trusman berinvestasi di perusahaan yang kreatif dan berinovasi serta berorientasi maju yang memiliki potensi  pertumbuhan tinggi di Indonesia Trusman adalah perusahaan investasi yang kuat dalam mengidentifikasi, memanage, dan mengembangkan serta menciptakan nilai lebih di perusahaan-perusahaan yang kami investasikan.'
+        fimg='trusman_global_investama_rad.png'
       />
       <TeamCompany data={TeamCompanyData.data} />
     </div>

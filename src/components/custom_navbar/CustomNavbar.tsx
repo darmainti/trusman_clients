@@ -21,8 +21,18 @@ export const CustomNavbar = ({
         <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
           <div className={`container ${cClass}`}>
             <Link className={`navbar-brand ${slogo}`} to='/'>
-              <img src={require('../../img/logo2.png')} alt='' />
-              <img src={require('../../img/logo.png')} alt='logo' />
+              <img
+                src={require('../../img/trusman_global_investama_w.png')}
+                alt=''
+                width={80}
+                height={80}
+              />
+              <img
+                src={require('../../img/trusman_global_investama.png')}
+                alt='logo'
+                width={80}
+                height={80}
+              />
             </Link>
             <button
               className='navbar-toggler collapsed'
@@ -59,16 +69,6 @@ export const CustomNavbar = ({
                 <li className='nav-item'>
                   <NavLink title='About' className='nav-link' to='/about'>
                     Tentang Trusman
-                  </NavLink>
-                </li>
-                <li className='nav-item'>
-                  <NavLink title='Portofolio' className='nav-link' to='/blog'>
-                    Blog
-                  </NavLink>
-                </li>
-                <li className='nav-item'>
-                  <NavLink title='Career' className='nav-link' to='/career'>
-                    Karir
                   </NavLink>
                 </li>
                 <li className='nav-item'>

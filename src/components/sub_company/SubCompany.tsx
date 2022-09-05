@@ -8,6 +8,7 @@ type SubCompanyProps = {
     icon: string;
     rclass: string;
     iclass: string;
+    img: string;
   }[];
 };
 export const SubCompany = (props: SubCompanyProps) => {
@@ -22,7 +23,7 @@ export const SubCompany = (props: SubCompanyProps) => {
       </div>
       <div className='container'>
         <h2 className='f_size_30 f_600 t_color3 l_height45 text-center mb_90'>
-          Anak perusahaan dari
+          Berikut beberapa anak perusahaan dari
           <br /> Trusman Global Investama (Holding)
         </h2>
         <div className='row p_service_info'>
@@ -34,6 +35,7 @@ export const SubCompany = (props: SubCompanyProps) => {
                 icon={item.icon}
                 rclass={item.rclass}
                 iclass={item.iclass}
+                img={item.img}
                 key={index}
                 id={index}
               />

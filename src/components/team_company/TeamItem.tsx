@@ -1,14 +1,23 @@
+import { useNavigate } from 'react-router-dom';
 import FooterData from '../footer/Footer.constant';
 
 type TeamItemProps = {
+  id: number;
   image: string;
   name: string;
   position: string;
+  description: string;
 };
 
 export default function TeamItem(props: TeamItemProps) {
+  const navigate = useNavigate();
+
+  const handleClick = (id: number) => {
+    navigate(`/team/${id}`);
+  };
+
   return (
-    <div className='ex_team_item'>
+    <div className='ex_team_item' onClick={() => handleClick(props.id)}>
       <img
         src={require('../../img/teams/' + props.image)}
         alt='team'

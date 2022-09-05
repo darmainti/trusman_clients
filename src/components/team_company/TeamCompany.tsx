@@ -2,7 +2,13 @@ import Sectitle from './Sectitle';
 import TeamItem from './TeamItem';
 
 type TeamCompanyProps = {
-  data: { id: number; image: string; name: string; position: string }[];
+  data: {
+    id: number;
+    image: string;
+    name: string;
+    position: string;
+    description: string;
+  }[];
 };
 
 export default function TeamCompany(props: TeamCompanyProps) {
@@ -11,19 +17,21 @@ export default function TeamCompany(props: TeamCompanyProps) {
       <div className='container'>
         <Sectitle
           sClass='sec_title text-center mb_70'
-          title='The Leaders'
+          title='Team Trusman'
           tClass='t_color3'
-          titleP='Leader bukanlah penguasa segalanya. Inilah sekelompok orang yang luar biasa yang bersatu untuk membentuk kekuatan untuk membentuk Trusman.'
+          titleP='Inilah sekelompok orang yang luar biasa yang bersatu untuk membentuk team demi kekuatan untuk membentuk Trusman.'
         />
         <div className='row'>
           {props.data.map((item) => {
             return (
-              <div className='col-lg col-sm'>
-                <div className='container w-50'>
+              <div className='col-lg-4 col-sm' key={item.id}>
+                <div className='container w-75'>
                   <TeamItem
+                    id={item.id}
                     image={item.image}
                     name={item.name}
                     position={item.position}
+                    description={item.description}
                   />
                 </div>
               </div>

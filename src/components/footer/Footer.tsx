@@ -1,5 +1,3 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import { FooterData } from './Footer.constant';
 const Fade = require('react-reveal/Fade');
 
@@ -25,7 +23,11 @@ export default function Footer() {
                 data-wow-delay='0.2s'
               >
                 <a href='index.html' className='f-logo'>
-                  <img src={require('../../img/logo2.png')} alt='' />
+                  <img
+                    src={require('../../img/trusman_global_investama_w.png')}
+                    alt=''
+                    width={200}
+                  />
                 </a>
                 <p>© 2022 - PT. Trusman Global Investama.</p>
                 <div className='f_social_icon'>

@@ -336,6 +336,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin-bottom: 90px;
 }
 
+.pb_50 {
+  padding-bottom: 50px;
+}
+
 .pl_20 {
   padding-left: 20px;
 }
@@ -3491,10 +3495,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 /*================ agency_banner_area_two css ===============*/
 .agency_banner_area_two {
-  background-image: -moz-linear-gradient(40deg, #5e2ced 0%, #a485fd 100%);
-  background-image: -webkit-linear-gradient(40deg, #5e2ced 0%, #a485fd 100%);
-  background-image: -ms-linear-gradient(40deg, #5e2ced 0%, #a485fd 100%);
-  background-image: linear-gradient(40deg, #5e2ced 0%, #a485fd 100%);
+  background-image: -moz-linear-gradient(40deg, #105ff2 0%, #85a8fd 100%);
+  background-image: -webkit-linear-gradient(40deg, #105ff2 0%, #85a8fd 100%);
+  background-image: -ms-linear-gradient(40deg, #105ff2 0%, #85a8fd 100%);
+  background-image: linear-gradient(40deg, #105ff2 0%, #85a8fd 100%);
   padding: 230px 0px 140px;
   position: relative;
   z-index: 1;
@@ -4579,13 +4583,24 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 /*====================================================*/
 /*================= Start breadcrumb_area css =================*/
 .breadcrumb_area {
-  background-image: -moz-linear-gradient(180deg, #5e2ced 0%, #a485fd 100%);
-  background-image: -webkit-linear-gradient(180deg, #5e2ced 0%, #a485fd 100%);
-  background-image: -ms-linear-gradient(180deg, #5e2ced 0%, #a485fd 100%);
-  background-image:  linear-gradient(180deg, #5e2ced 0%, #a485fd 100%);
+  background-image: -moz-linear-gradient(180deg, #105ff2 0%, #85a8fd 100%);
+  background-image: -webkit-linear-gradient(180deg, #105ff2 0%, #85a8fd 100%);
+  background-image: -ms-linear-gradient(180deg, #105ff2 0%, #85a8fd 100%);
+  background-image:  linear-gradient(180deg, #105ff2 0%, #85a8fd 100%);
   position: relative;
   z-index: 1;
   padding: 235px 0px 125px;
+  overflow: hidden;
+}
+
+.breadcrumb_area_single {
+  background-image: -moz-linear-gradient(180deg, #105ff2 0%, #85a8fd 100%);
+  background-image: -webkit-linear-gradient(180deg, #105ff2 0%, #85a8fd 100%);
+  background-image: -ms-linear-gradient(180deg, #105ff2 0%, #85a8fd 100%);
+  background-image:  linear-gradient(180deg, #105ff2 0%, #85a8fd 100%);
+  position: relative;
+  z-index: 1;
+  padding: 0px 0px 125px;
   overflow: hidden;
 }
 
@@ -4595,6 +4610,14 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   top: 0;
   z-index: -1;
 }
+
+.breadcrumb_area_single .breadcrumb_shap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
 .breadcrumb_area p{
   max-width: 800px;
   margin-left: auto;
@@ -4726,6 +4749,11 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   left: 8px;
   top: 0;
   font-size: 14px;
+}
+
+.foto_team {
+  width: 70%;
+  height: 70%;
 }
 
 @-webkit-keyframes spin {
@@ -9728,7 +9756,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .fun_fact_content h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 .fun_fact_content .fact_item + .fact_item{
   padding-left: 100px;
@@ -9766,9 +9794,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .fact_author_img img {
-  margin-top: -70px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  margin: -67px 0px 0px 355px;
+  -webkit-filter: grayscale(0%);
+  opacity: 0.8;
 }
 
 .fact_author_img_two .box_three {
@@ -9777,12 +9805,21 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   background-image: -ms-linear-gradient(-90deg, #fb862f 0%, #c640fd 100%);
   background-image: linear-gradient(-90deg, #fb862f 0%, #c640fd 100%);
 }
+@media screen and (max-width: 775px) {
+  .fact_author_img{
+    display: none;
+  }
+  .fun_fact_area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 
 .fact_author_img_two .box_four {
-  background-image: -moz-linear-gradient(90deg, #5e2ced 0%, #a485fd 100%);
-  background-image: -webkit-linear-gradient(90deg, #5e2ced 0%, #a485fd 100%);
-  background-image: -ms-linear-gradient(90deg, #5e2ced 0%, #a485fd 100%);
-  background-image: linear-gradient(90deg, #5e2ced 0%, #a485fd 100%);
+  background-image: -moz-linear-gradient(90deg, #105ff2 0%, #85a8fd 100%);
+  background-image: -webkit-linear-gradient(90deg, #105ff2 0%, #85a8fd 100%);
+  background-image: -ms-linear-gradient(90deg, #105ff2 0%, #85a8fd 100%);
+  background-image: linear-gradient(90deg, #105ff2 0%, #85a8fd 100%);
 }
 
 /*============ feedback_area css ==============*/
@@ -12413,8 +12450,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .contact_form_box .btn_three {
   min-width: 180px;
   text-align: center;
-  background: #5e2ced;
-  border-color: #5e2ced;
+  background: #105ff2;
+  border-color: #105ff2;
   margin-top: 0px;
   float: right;
 }
@@ -17838,7 +17875,7 @@ input[type="text"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/hosting/map.png") no-repeat scroll center 0/cover;
+  /* background: url("../img/hosting/map.png") no-repeat scroll center 0/cover; */
   z-index: -1;
 }
 
@@ -18377,7 +18414,7 @@ a .h_head:hover {
 }
 
 .h_map {
-  background: url("../img/hosting/region_map.png") no-repeat scroll center top;
+  /* background: url("../img/hosting/region_map.png") no-repeat scroll center top; */
   height: 595px;
 }
 
@@ -18538,7 +18575,7 @@ a .h_head:hover {
 }
 
 .h_footer_dark .company_widget .f_social_icon {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .h_footer_dark .company_widget .f_social_icon a {
@@ -18589,9 +18626,9 @@ a .h_head:hover {
 }
 
 .pos_footer_area {
-  background-image: linear-gradient(40deg, #1a0751 0%, #5f44aa 100%);
+  background-image: linear-gradient(40deg, #0b15d6 0%, #389fb9 100%);
   padding-bottom: 0;
-  padding-top: 120px;
+  padding-top: 60px;
   position: relative;
   z-index: 0;
 }
@@ -18673,7 +18710,7 @@ a .h_head:hover {
 }
 
 .pos_footer_bottom {
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -24415,6 +24452,11 @@ a .h_head:hover {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
+}
+
+.team-description::first-letter{
+  font-size: 300%;
+  padding-right: 5px;
 }
 
 /*============== event_features_area css ============*/

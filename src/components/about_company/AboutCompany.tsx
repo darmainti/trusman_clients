@@ -18,10 +18,11 @@ export default function AboutCompany(props: AboutCompanyProps) {
               <div className='square_box box_four'></div>
               {props.fimg && (
                 <img
-                  className='wow fadeInUp'
+                  className='wow fadeInUp img-about'
                   data-wow-delay='0.3s'
                   src={require('../../img/' + props.fimg)}
                   alt=''
+                  height={300}
                 />
               )}
             </div>
