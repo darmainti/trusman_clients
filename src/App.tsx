@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BaseScreen } from './components/base_screen/BaseScreen';
+import ScrollToTop from './components/scroll_to_top/ScroolToTop';
+import { About } from './pages/about/About';
+import { Contact } from './pages/contact/Contact';
+import { Home } from './pages/home/Home';
+import { Teams } from './pages/teams/Teams';
+import TeamDetail from './pages/team_detail/TeamDetail';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop>
+        <Routes>
+          <Route path='/' element={<BaseScreen />}>
+            <Route index element={<Home />} />
+            <Route path='about' element={<About />} />
+            <Route path='contact' element={<Contact />} />
+            <Route path='team'>
+              <Route index element={<Teams />} />
+              <Route path=':teamId' element={<TeamDetail />} />
+            </Route>
+          </Route>
+        </Routes>
+      </ScrollToTop>
+    </BrowserRouter>
   );
 }
 
